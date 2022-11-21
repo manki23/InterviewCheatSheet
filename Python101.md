@@ -28,3 +28,8 @@ Use sorted to sort according to multiple crierias:
 ```python
 sorted(array, key=lambda x: (x[0], x[1]))
 ```
+
+## defaultdict
+```python
+from collections import defaultdict
+```

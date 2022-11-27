@@ -33,3 +33,20 @@ sorted(array, key=lambda x: (x[0], x[1]))
 ```python
 from collections import defaultdict
 ```
+
+## bisect_left
+The bisect_left() method finds and returns the position at which an element can be inserted into a Python list while maintaining the sorted order of the Python list. If the list already has elements with the same value as the new element, the insertion point is to the left of first such element.
+
+```python
+bisect_left(pythonList, newElement, lo=0, hi=len(a));
+```
+Parameters:
+- `pythonList` – The Python list whose elements are in sorted order.
+- `newElement` –  The new element for which the position is to be found in the already sorted Python list.
+
+- `lo` – The lowest position of the search interval to be used as a heuristic.
+
+- `hi` – The highest position of the search interval to used as  a heuristic.
+
+Return Value:
+- The position at which the element can be inserted into the Python list while maintaining the sorted order of the list.

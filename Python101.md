@@ -35,6 +35,9 @@ from collections import defaultdict
 ```
 
 ## bisect_left
+```python
+import bisect
+```
 The bisect_left() method finds and returns the position at which an element can be inserted into a Python list while maintaining the sorted order of the Python list. If the list already has elements with the same value as the new element, the insertion point is to the left of first such element.
 
 ```python
@@ -50,3 +53,11 @@ Parameters:
 
 Return Value:
 - The position at which the element can be inserted into the Python list while maintaining the sorted order of the list.
+
+Similar:
+- `insort(list, newElement, lo=0, hi=len(a))`:   
+    - The insort() method inserts a new element into an already sorted Python list.
+    - If the list already has existing elements as the new element then the new element is inserted into the right of the last such existing element.
+    - The functions insort() and insort_right() behave the same way.
+    - Invoking insort() is equivalent to calling the bisect_right() and calling the list.insert().
+- `insort_left()`, `insort_right()`, `bisect_right()`...
